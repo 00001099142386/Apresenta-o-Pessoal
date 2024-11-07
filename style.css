@@ -51,6 +51,87 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para as novas seções */
+
+/* Músicas favoritas */
+.musica {
+    margin-top: 40px;
+}
+
+.musica h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.musica ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.musica li {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 8px 0;
+}
+
+/* Filmes e Séries favoritos */
+.filmes-series {
+    margin-top: 40px;
+}
+
+.filmes-series h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.filmes-series ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.filmes-series li {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 8px 0;
+}
+
+/* Estilos para a Galeria de Vídeos */
+.videos {
+    margin-top: 40px;
+}
+
+.videos h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05);
+}
+
 /* Estilos para a Galeria de Fotos */
 .galeria {
     text-align: center;
@@ -66,13 +147,13 @@ header h1 {
 .galeria-container {
     display: flex;
     justify-content: center;
-    gap: 20px;  /* Espaçamento entre as imagens */
-    flex-wrap: wrap;  /* Faz com que as imagens se ajustem em várias linhas, se necessário */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .foto-galeria {
     width: 100%;
-    max-width: 300px;  /* Limita o tamanho máximo das imagens */
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -80,54 +161,10 @@ header h1 {
 }
 
 .foto-galeria:hover {
-    transform: scale(1.05);  /* Aumenta a imagem quando o mouse passa por cima */
+    transform: scale(1.05);
 }
 
-/* Responsividade para a Galeria */
-@media (max-width: 768px) {
-    .galeria-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Música */
-.musica {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.musica h2 {
-    font-size: 1.5em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-audio {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 10px;
-}
-
-/* Vídeo */
-.video {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.video h2 {
-    font-size: 1.5em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-video {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Adicionando um pouco de responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
     .container {
         width: 95%;
@@ -139,5 +176,33 @@ video {
 
     .sobre {
         font-size: 1em;
+    }
+
+    /* Ajustes para as listas de músicas e filmes */
+    .musica ul, .filmes-series ul {
+        font-size: 1em;
+    }
+
+    .musica li, .filmes-series li {
+        margin: 5px 0;
+    }
+
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    /* Ajustes para as imagens da galeria */
+    .galeria-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-galeria {
+        max-width: 90%;
     }
 }
