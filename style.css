@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.sobre {
+    font-size: 1.2em;
+    color: #34495e;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    line-height: 1.6;
+}
+
+.foto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foto img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.musica {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.musica h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
