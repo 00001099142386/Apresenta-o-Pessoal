@@ -77,25 +77,49 @@ header h1 {
     margin: 8px 0;
 }
 
-/* Filmes e Séries favoritos */
-.filmes-series {
+/* Filmes favoritos */
+.filmes {
     margin-top: 40px;
 }
 
-.filmes-series h2 {
+.filmes h2 {
     font-size: 1.5em;
     color: #2c3e50;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.filmes-series ul {
+.filmes ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
 }
 
-.filmes-series li {
+.filmes li {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 8px 0;
+}
+
+/* Séries favoritas */
+.series {
+    margin-top: 40px;
+}
+
+.series h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.series ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.series li {
     font-size: 1.2em;
     color: #34495e;
     margin: 8px 0;
