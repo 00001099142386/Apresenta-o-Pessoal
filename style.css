@@ -77,6 +77,26 @@ header h1 {
     margin: 8px 0;
 }
 
+.player-musicas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.player-musicas audio {
+    width: 250px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Filmes */
+.filmes, .series {
+    margin-bottom: 40px;
+}
+
 /* Filmes favoritos */
 .filmes {
     margin-top: 40px;
